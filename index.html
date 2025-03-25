@@ -1,0 +1,32 @@
+<html>
+<html>
+<head>
+  <title>Netball Scorekeeper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Netball Scorekeeper</h1>
+    <div class="team-scores">
+      <div class="team-score">
+        <h2>Team Tamas</h2>
+        <p class="score" id="teamAScore">0</p>
+        <div class="buttons">
+          <button class="score-btn" onclick="updateScore('teamTamas', 1)">+1</button>
+          <button class="score-btn" onclick="updateScore('teamTamas', 2)">+2</button>
+        </div>
+      </div>
+      <div class="team-score">
+        <h2>Team Radu</h2>
+        <p class="score" id="teamBScore">0</p>
+        <div class="buttons">
+          <button class="score-btn" onclick="updateScore('teamB', 1)">+1</button>
+          <button class="score-btn" onclick="updateScore('teamA', 2)">+2</button>
+        </div>
+      </div>
+    </div>
+    <button id="resetBtn" onclick="resetScores()">Reset</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
